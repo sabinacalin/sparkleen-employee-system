@@ -1,0 +1,35 @@
+[
+  {
+    "id": "EMP001",
+    "name": "Juan Dela Cruz",
+    "department": "Laundry",
+    "position": "Laundry Staff",
+    "salary": 15000,
+    "salaryCategory": "Monthly",
+    "status": "Active",
+    "email": "juan@example.com",
+    "phone": "09171234567"
+  },
+  {
+    "id": "EMP002",
+    "name": "Maria Santos",
+    "department": "Maintenance",
+    "position": "Maintenance Staff",
+    "salary": 16000,
+    "salaryCategory": "Monthly",
+    "status": "Active",
+    "email": "maria@example.com",
+    "phone": "09181234567"
+  },
+  {
+    "id": "EMP003",
+    "name": "Mark Reyes",
+    "department": "Maintenance",
+    "position": "Maintenance Staff",
+    "salary": 10000,
+    "salaryCategory": "Weekly",
+    "status": "Active",
+    "email": "mark@example.com",
+    "phone": "09191234567"
+  }
+]

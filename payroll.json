@@ -1,0 +1,26 @@
+[
+  {
+    "id": "PAY001",
+    "employeeId": "EMP001",
+    "month": "November 2026",
+    "amount": 10000,
+    "releaseAmount": 0,
+    "status": "Pending"
+  },
+  {
+    "id": "PAY002",
+    "employeeId": "EMP002",
+    "month": "November 2026",
+    "amount": 10000,
+    "releaseAmount": 0,
+    "status": "Pending"
+  },
+  {
+    "id": "PAY003",
+    "employeeId": "EMP003",
+    "month": "November 2026",
+    "amount": 10000,
+    "releaseAmount": 0,
+    "status": "Pending"
+  }
+]

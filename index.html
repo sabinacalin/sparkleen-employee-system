@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sparkleen | Employee Information System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="loginScreen" class="login-screen">
+  <div class="login-card">
+    <h1>Welcome! Sparkleen Employee Portal!</h1>
+    <form id="loginForm">
+      <h3>Login</h3>
+      <label>Email</label><input id="email" type="email" placeholder="username@gmail.com" required>
+      <label>Password</label><input id="password" type="password" placeholder="Password" required>
+      <a class="forgot" href="#" onclick="return false">Forgot Password?</a>
+      <button type="submit" class="sign-in">Sign in</button>
+      <p class="login-note">or continue with</p>
+      <p class="login-note">Don't have an account? Register here</p>
+      <small>Demo: admin@sparkleen.com / sparkleen123</small>
+    </form>
+  </div>
+</section>
+
+<div id="app" class="app hidden">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-logo">🧺</div><div><strong>SPARKLEEN</strong><small>LAUNDRY EXPRESS</small></div></div>
+    <nav>
+      <button class="nav-button active" data-page="dashboard"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="1.5"/><path d="M8 21h8M12 17v4M6 7h12M7 10h4M7 13h7"/></svg></span>DASHBOARD</button>
+      <button class="nav-button" data-page="employees"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="7" r="3.5"/><circle cx="17" cy="8" r="2.8"/><path d="M1.5 20v-2.2A5.5 5.5 0 0 1 7 12.3h2A5.5 5.5 0 0 1 14.5 18v2M14 13h2.5a5 5 0 0 1 5 5v2"/></svg></span>EMPLOYEES</button>
+      <button class="nav-button" data-page="attendance"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h13l4 4v14H4z"/><path d="M17 3v5h4M7 16l3-3 2 2 5-6"/></svg></span>ATTENDANCE</button>
+      <button class="nav-button" data-page="payroll"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="7" r="3.2"/><path d="M2 18a6 6 0 0 1 12 0v2H2z"/><circle cx="17" cy="15" r="5"/><path d="M17 12v6M19 13.5h-3a1.2 1.2 0 0 0 0 2.4h2a1.2 1.2 0 0 1 0 2.4h-3"/></svg></span>PAYROLL</button>
+    </nav>
+    <div class="sidebar-footer">HOTEL LAUNDRY SERVICES<br>SINCE 2002</div>
+  </aside>
+  <main class="main-content">
+    <header class="top-header">
+      <div><p class="greeting">Good Day!</p><h1 id="pageTitle">Employee Management Dashboard</h1><p id="pageDescription">Manage employee information and attendance records in one organized place.</p></div>
+      <div class="date-pill" id="todayDate"></div>
+    </header>
+    <section id="stats" class="stats-grid"></section>
+    <section id="pageContent" class="page-content"></section>
+  </main>
+</div>
+<div id="modal" class="modal hidden"><div class="modal-card"><div class="modal-heading"><h2 id="modalTitle">Add Record</h2><button id="closeModal" class="close-button">×</button></div><form id="recordForm"></form></div></div>
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

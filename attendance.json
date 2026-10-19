@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ATT001",
+    "employeeId": "EMP001",
+    "date": "2026-10-04",
+    "status": "Present",
+    "timeIn": "8:00 AM",
+    "timeOut": "5:00 PM"
+  },
+  {
+    "id": "ATT002",
+    "employeeId": "EMP002",
+    "date": "2026-10-04",
+    "status": "Late",
+    "timeIn": "8:20 AM",
+    "timeOut": "5:00 PM"
+  },
+  {
+    "id": "ATT003",
+    "employeeId": "EMP003",
+    "date": "2026-10-04",
+    "status": "Absent",
+    "timeIn": "-",
+    "timeOut": "-"
+  }
+]
